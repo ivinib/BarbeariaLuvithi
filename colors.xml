@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F94306</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFF</color>
+    <color name="colorLogar">#FFF</color>
+    <color name="cinza">#cccccc</color>
+    <color name="link">#1C8DFF</color>
+    <color name="colorTeste">#909090</color>
+</resources>

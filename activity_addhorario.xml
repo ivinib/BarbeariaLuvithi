@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_Addhorario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.example.dourado_dtona.barbearia40.Addhorario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/agendados"
+            android:id="@+id/imageView2"
+            android:onClick="Horarios"
+            android:layout_weight="0.11"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/add"
+            android:id="@+id/imageView3"
+            android:layout_weight="0.11" />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/pagos"
+            android:id="@+id/imageView6"
+            android:onClick="Pagos"
+            android:layout_weight="0.11" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/logout"
+            android:id="@+id/imageView4"
+            android:onClick="Sair"
+            android:layout_weight="1.17" />
+    </LinearLayout>
+    
+
+    <TextView
+            android:text="@string/novoHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:id="@+id/textView8"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+             <TextView
+                android:text="@string/Pesquise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:id="@+id/nome"
+                android:hint="@string/pesquise"/>
+
+            <TextView
+                 android:text="E-mail:"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="18dp"
+                 android:id="@+id/textView10" />
+
+            <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="18dp"
+                 android:inputType="text"
+                 android:id="@+id/email"
+                 android:hint="E-mail"/>
+
+            <TextView
+                android:text="@string/Telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/telefone"
+                android:ems="10"
+                android:id="@+id/telefone" />
+
+            <TextView
+                android:text="@string/Servico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView6" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/servico"
+                android:inputType="text"
+                android:hint="@string/servicoPreco"/>
+            <TextView
+                android:text="@string/horario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView7" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:ems="10"
+                android:hint="00:00"
+                android:id="@+id/hora" />
+			
+			<TextView
+                android:text="@string/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="00/00/0000"
+                android:id="@+id/data" />
+
+            <Button
+                android:text="@string/addServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNovo"
+                android:elevation="1dp"
+                android:background="@color/cinza"
+                android:fontFamily="cursive"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textAlignment="center"
+                android:textStyle="normal|bold|italic"
+                android:textAllCaps="false"
+                android:onClick="novoServico"/>
+
+            <Button
+                android:text="Editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnEdit"
+                android:elevation="1dp"
+                android:background="@color/cinza"
+                android:fontFamily="cursive"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textAlignment="center"
+                android:textStyle="normal|bold|italic"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                android:onClick="editarHorario"/>
+
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

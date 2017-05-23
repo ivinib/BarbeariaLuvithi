@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Barbearia4.0</string>
+    <string name="email">Nick</string>
+    <string name="senha">Senha</string>
+    <string name="btnLogar">LOGAR</string>
+    <string name="txtEsqueciSenha"><u><b>Esqueceu a senha?</b></u></string>
+    <string name="btnEsqueciSenha">Confirmar e-mail</string>
+    <string name="confirmaEmail">Confirme seu e-mail</string>
+    <string name="voltar"><u>Voltar</u></string>
+    <string name="voltarLogin"><u><i>Voltar a tela de login</i></u></string>
+    <string name="title_activity_tela_principal">telaPrincipal</string>
+    <string name="aguarde"><i><b>A G U A R D E....</b></i></string>
+    <string name="title_activity_addhorario">Addhorario</string>
+    <string name="digitealgo">Cliente</string>
+    <string name="Pesquise">Nome do cliente:</string>
+    <string name="pesquise">informe o nome</string>
+    <string name="Telefone">Telefone:</string>
+    <string name="telefone">informe o telefone</string>
+    <string name="Servico">informe o  serviço:</string>
+    <string name="servicoPreco">Digite o serviço e o preço</string>
+    <string name="addServico">Confirmar horário</string>
+    <string name="horario">Horário:</string>
+    <string name="Horario">Digite a hora</string>
+    <string name="novoHorario">Novo horário</string>
+    <string name="agendados">Horário marcado</string>
+    <string name="pagos">Serviços pagos</string>
+    <string name="data">Informe a data:</string>
+    <string name="Data">Informe a data</string>
+</resources>

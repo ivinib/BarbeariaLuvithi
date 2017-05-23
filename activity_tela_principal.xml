@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.example.dourado_dtona.barbearia40.telaPrincipal">
+
+    <TextView
+        android:text="@string/agendados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:id="@+id/textView8"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="0dp">
+            <TextView
+                android:text="Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/lista"
+                android:layout_gravity="left"/>
+            <TextView
+                android:text="Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/lista1"
+                android:layout_gravity="left"/>
+            <TextView
+                android:text="Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/lista2"
+                android:layout_gravity="left"/>
+            <TextView
+                android:text="Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/lista3"
+                android:layout_gravity="left"/>
+            <TextView
+                android:text="Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/lista4"
+                android:layout_gravity="left"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <!--<Button-->
+                    <!--android:id="@+id/enviaEmail"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Confirmar horário"
+                    android:OnClick="enviaEmail"/>-->
+                <Button
+                    android:id="@+id/editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:onClick="editarHorario"/>
+                <Button
+                    android:id="@+id/deletar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deletar"
+                    android:onClick="deletar"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/concluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Concluir serviço"
+                android:onClick="concluir"/>
+        </LinearLayout>
+
+
+</LinearLayout>
